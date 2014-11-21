@@ -1,0 +1,48 @@
+/*
+* Grid list css
+*/
+
+/*
+* Override existing css from the exchange plugin
+*/
+#it-exchange-store .it-exchange-products li:nth-child(2n+1) { margin-right: 0;}
+#it-exchange-store .it-exchange-products li {width: auto; margin: 0;}
+#it-exchange-store .it-exchange-product-details {padding: 1em 1em 0 1em; overflow:hidden;}
+#it-exchange-store .it-exchange-products li:nth-child(2n+1) {margin: 0; clear:none;}
+#it-exchange-store .it-exchange-products li {float: none;}
+
+/*
+* Required css for grid/list
+*/
+#it-exchange-store ul.it-exchange-products.grid li.it-exchange-product {
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-top: 1em;
+    clear: none;
+    float: left;
+}
+
+#it-exchange-store ul.it-exchange-products.list li.it-exchange-product {
+    display: block;
+    margin-top: 1em;
+    width: auto;
+    clear: both;
+}
+
+#it-exchange-store it-exchange-products.list li.it-exchange-product .it-exchange-featured-image {
+    float: left;
+}
+
+.it-exchange-custom-loop-view-selection a {
+    color: #ccc;
+}
+
+.it-exchange-custom-loop-view-selection a:hover,
+.it-exchange-custom-loop-view-selection a.active {
+    color: #000;
+}
+
+.it-exchange-custom-loop-header .it-exchange-custom-loop-view-selection {
+    float: right;
+    clear: right;
+}
