@@ -2,13 +2,13 @@
 /**
  * iThemes Exchange custom loop offers more control over the loop that builts a store page.
  * @package IT_Exchange
- * @since 1.0.0
+ * @since 1.0.1
  */
 if (!class_exists('it_exchange_custom_loop')) {
 
         class it_exchange_custom_loop {
 
-                var $version = '1.0.0';
+                var $version = '1.0.1';
                 var $prefix = '_exchange_custom_loop_';
                 var $orderby = array(
                     'default' => 'default',

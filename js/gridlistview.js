@@ -1,26 +1,22 @@
 jQuery(document).ready(function($){
 
     $('#grid').click(function() {
-        if ($.cookie('gridcookie') == 'list') {
             $(this).addClass('active');
             $('#list').removeClass('active');
             $.cookie('gridcookie','grid', { path: '/' });
             $('ul.it-exchange-products').fadeOut(300, function() {
                 $(this).addClass('grid').removeClass('list').fadeIn(300);
             });
-        }
         return false;
     });
 
     $('#list').click(function() {
-        if ($.cookie('gridcookie') == 'grid') {
             $(this).addClass('active');
             $('#grid').removeClass('active');
             $.cookie('gridcookie','list', { path: '/' });
             $('ul.it-exchange-products').fadeOut(300, function() {
                 $(this).removeClass('grid').addClass('list').fadeIn(300);
             });
-        }
         return false;
     });
 
