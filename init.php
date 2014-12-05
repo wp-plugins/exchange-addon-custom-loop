@@ -8,7 +8,7 @@ if (!class_exists('it_exchange_custom_loop')) {
 
         class it_exchange_custom_loop {
 
-                var $version = '1.0.1';
+                var $version = '1.0.2';
                 var $prefix = '_exchange_custom_loop_';
                 var $orderby = array(
                     'default' => 'default',
@@ -32,8 +32,10 @@ if (!class_exists('it_exchange_custom_loop')) {
                     'product_types' => NULL,
                     'order_by' => NULL,
                     'order_seq ' => 'DESC',
+                    'order_by_text' => NULL,
                     'show' => NULL
                 );
+                var $views = array('grid', 'list');
 
                 function it_exchange_custom_loop() {
 
@@ -63,6 +65,9 @@ if (!class_exists('it_exchange_custom_loop')) {
 
                     wp_register_script('it-custom-loop-admin', plugins_url('js/admin_scripts.js', __FILE__), array('jquery'), $this->version, false);
                     wp_enqueue_script('it-custom-loop-admin');
+                    
+                    wp_register_style('it-custom-loop-admin-styles', plugins_url('css/admin_style.css', __FILE__), null, $this->version);
+                    wp_enqueue_style('it-custom-loop-admin-styles');
                     
                 }
 
@@ -139,12 +144,12 @@ if (!class_exists('it_exchange_custom_loop')) {
                         $this->selections['product_types'] = get_post_meta(get_the_ID(), $this->prefix . 'product_types', true);
                         $this->selections['order_by'] = get_post_meta(get_the_ID(), $this->prefix . 'order_by', true);
                         $this->selections['order_seq'] = get_post_meta(get_the_ID(), $this->prefix . 'order_seq', true);
+                        $this->selections['order_by_text'] = get_post_meta(get_the_ID(), $this->prefix . 'order_by_text', true);
                         $this->selections['show'] = get_post_meta(get_the_ID(), $this->prefix . 'show', true);
 
                         // validate and set defaults
-                        $views = array('grid', 'list');
-                        if ( !in_array(strtolower($this->selections['default_view']), $views) ) {
-                            $this->selections['default_view'] = 'list';
+                        if ( !in_array(strtolower($this->selections['default_view']), $this->views) ) {
+                            $this->selections['default_view'] = 'none';
                         }
 
                         if ( !is_numeric($this->selections['number_of_columns']) ) {
@@ -206,13 +211,13 @@ if (!class_exists('it_exchange_custom_loop')) {
 
                     wp_register_script('it-custom-loop-script', plugins_url('js/scripts.js', __FILE__), array('jquery'), $this->version, false);
                     wp_enqueue_script('it-custom-loop-script');
-
+                    
                     wp_register_style('it-custom-loop-styles', plugins_url('css/style.css', __FILE__), null, $this->version);
                     wp_enqueue_style('it-custom-loop-styles');
 
                     // only add code for grid list if ticked in page meta data
-                    if (!empty($this->selections['show']) && (in_array( 'checkgridlist', $this->selections['show'] ) ) ):
-                        
+                    if (!empty($this->selections['show']) && (in_array( 'checkgridlist', $this->selections['show'] ) ) && (in_array(strtolower($this->selections['default_view']), $this->views) ) ):
+                                                                     
                         wp_register_script('it_jquery_cookie', plugins_url('js/jquery.cookie.js', __FILE__), array('jquery'), $this->version, false);
                         wp_enqueue_script('it_jquery_cookie');
 
@@ -230,16 +235,15 @@ if (!class_exists('it_exchange_custom_loop')) {
 
                         // add js for for grid / list 
                         add_action('wp_footer', array($this, 'add_js_for_gridlist'));
+                        
+                        // only add code for minimum viewport if value > 0
+                        if (!empty($this->selections['viewport']) && ( $this->selections['viewport'] > 0 ) ):
+
+                            add_action('wp_footer', array($this, 'add_js_for_viewport'));
+
+                        endif;
 
                     endif;
-
-                    // only add code for minimum viewport if value > 0
-                    if (!empty($this->selections['viewport']) && ( $this->selections['viewport'] > 0 ) ):
-
-                        add_action('wp_footer', array($this, 'add_js_for_viewport'));
-
-                    endif;
-
                 }
 
                 /**
@@ -249,7 +253,7 @@ if (!class_exists('it_exchange_custom_loop')) {
                                        
                     echo "\n<div class='it-exchange-custom-loop-header entry-header'>";
                     
-                    // only add code for grid list if ticked in page meta data
+                    // only add code for order by if ticked in page meta data
                     if (!empty($this->selections['show']) && ( in_array('checksortselection', $this->selections['show']) )) :
                         
                         $this->add_sort_selections();
@@ -257,7 +261,7 @@ if (!class_exists('it_exchange_custom_loop')) {
                     endif;
                     
                     // only add code for grid list if ticked in page meta data
-                    if (!empty($this->selections['show']) && (in_array( 'checkgridlist', $this->selections['show'] ) ) ):
+                    if (!empty($this->selections['show']) && (in_array( 'checkgridlist', $this->selections['show'] ) ) && (in_array(strtolower($this->selections['default_view']), $this->views) ) ):
                         
                         $this->add_gridlist_selections();
                     
@@ -526,6 +530,9 @@ if (!class_exists('it_exchange_custom_loop')) {
                     $options = $this->orderby;
                     echo "\n<div class='it-exchange-custom-loop-sort-selection'>";
                         echo "\n\t<form name='selectorderby' method='get'>";
+                        if ($this->selections['order_by_text']):
+                            echo "\n<span class='it-exchange-custom-loop-order-by-text'>" . $this->selections['order_by_text'] . "</span>";
+                        endif;
                         echo $this->dropdown($name, $options, $this->selected);
                         echo "\n\t</form>";
                     echo "\n</div>\n";
@@ -588,6 +595,7 @@ if (!class_exists('it_exchange_custom_loop')) {
                         delete_post_meta($post_id, $this->prefix . 'product_types');
                         delete_post_meta($post_id, $this->prefix . 'order_by');
                         delete_post_meta($post_id, $this->prefix . 'order_seq');
+                        delete_post_meta($post_id, $this->prefix . 'order_by_text');
                         delete_post_meta($post_id, $this->prefix . 'show');
                     }
                 }

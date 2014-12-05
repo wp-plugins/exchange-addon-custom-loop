@@ -66,6 +66,7 @@ function it_sample_metaboxes( array $meta_boxes ) {
                             'options' => array(
                                     'list' => __( 'List style', 'rvw-exchange-addon-custom-loop' ),
                                     'grid'   => __( 'Grid style', 'rvw-exchange-addon-custom-loop' ),
+                                    'none'   => __( 'Don\'t change', 'rvw-exchange-addon-custom-loop' ),
                             ),
 			),
                         array(
@@ -89,7 +90,7 @@ function it_sample_metaboxes( array $meta_boxes ) {
 			),                    
                         array(
                             'name' => 'Pagination Setttings',
-                            'desc' => 'These settings control the number of posts per store page, and the text for the previous/next links.',
+                            'desc' => '',
                             'type' => 'title',
                             'id' => $prefix . 'pagination_settings_title'
                         ),
@@ -159,6 +160,12 @@ function it_sample_metaboxes( array $meta_boxes ) {
                                     'asc' => __( 'Ascending (low to high)', 'rvw-exchange-addon-custom-loop' ),
                                     'desc'   => __( 'Descending (high to low)', 'rvw-exchange-addon-custom-loop' ),
                             ),
+			),
+                        array(
+                            'name' => __( 'Order By text', 'rvw-exchange-addon-custom-loop' ),
+                            'desc' => __( 'Optional, blank allowed', 'rvw-exchange-addon-custom-loop' ),
+                            'id'   => $prefix . 'order_by_text',
+                            'type' => 'text_medium',
 			),
                         array(
                             'name' => 'Front End options',

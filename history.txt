@@ -1,5 +1,9 @@
-1.0.0 - 2014-11-19 - Ronald van Weerd
-    Initial release
+1.0.2 - 2014-12-05 - Ronald van Weerd
+    Added optional "order by" text for the order by dropdown
+    Added grid/list option "none" to not affect an existing loop at all
+    Grey out options that are not relevant
 1.0.1 - 2014-11-21 - Ronald van Weerd
     Updated Readme.txt
     Fixed issue where Grid/List would fail if no cookie set yet
+1.0.0 - 2014-11-19 - Ronald van Weerd
+    Initial release

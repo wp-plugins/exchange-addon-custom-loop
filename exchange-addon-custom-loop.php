@@ -1,9 +1,9 @@
 <?php
 /*
  * Plugin Name: iThemes Exchange - Custom Loop Add-on
- * Version: 1.0.1
+ * Version: 1.0.2
  * Description: iThemes Exchange custom loop offers more control over the loop that builts a store page.
- * Plugin URI: http://vanweerd.com
+ * Plugin URI: http://weerdpress.com/wordpress-plugins/ithemes-exchange-custom-loop-add
  * Author: Ronald van Weerd
  * Author URI: http://vanweerd.com
  * iThemes Package: exchange-addon-custom-loop
