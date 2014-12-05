@@ -1,0 +1,13 @@
+/* =============================================================================
+   Custom Loop Admin page
+   ============================================================================= */
+
+.fadethis {
+    opacity: 0.4;
+    transition: opacity .8s linear;
+}
+
+.dontfade{
+    opacity: 1;
+    transition: opacity .8s linear;
+}
