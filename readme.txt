@@ -28,7 +28,7 @@ Set a default Sort order for the products
 = Frontend Options =
 Enable or disable a grid/list button for the store, so the user can dynamically change the view. Enable or disable a "order by" dropdown, so the user can change the order in which products are displayed.
 
-== New in 1.0.2 ==
+= New in 1.0.2 =
 * You can now choose the text (if any) to display in front of the sort order dropdown
 * Added grid/list option "none" to not affect an existing loop at all, so no need to choose either grid or list. It will default to the Exchange default. Note that this will disable the grid/list selections.
 * None relevant options are "greyed out" based on selections made.
