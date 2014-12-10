@@ -4,7 +4,7 @@ Contributors: ronaldvw
 Tags: iThemes Exchange, add-on, addon, Exchange add-on, Exchange addon, store, shop, loop, grid, list
 Requires at least: 3.0.0
 Tested up to: 4.0.1
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 
 Create a custom loop for your product store pages, add selections, grid/list view and more.
@@ -28,12 +28,13 @@ Set a default Sort order for the products
 = Frontend Options =
 Enable or disable a grid/list button for the store, so the user can dynamically change the view. Enable or disable a "order by" dropdown, so the user can change the order in which products are displayed.
 
+= 1.0.3 =
+Fixed an issue where the Default Grid/List View setting wasn't being applied when frontend view wasn't enabled
+
 = New in 1.0.2 =
 * You can now choose the text (if any) to display in front of the sort order dropdown
 * Added grid/list option "none" to not affect an existing loop at all, so no need to choose either grid or list. It will default to the Exchange default. Note that this will disable the grid/list selections.
 * None relevant options are "greyed out" based on selections made.
-
-Please visit [the official website](http://weerdpress.com/wordpress-plugins/ithemes-exchange-custom-loop-add/ "WeerdPress Plugins") for further details and the latest information on this plugin.
 
 == Installation ==
 
@@ -44,7 +45,13 @@ Please visit [the official website](http://weerdpress.com/wordpress-plugins/ithe
 
 5. Once enabled, the "write page" screen will have an extra option to enable the custom loop. Upon ticking that option, all custom loop options will become visible and editable. For an overview of all options, see the screenshots section.
 
+Please visit [the official website](http://weerdpress.com/wordpress-plugins/ithemes-exchange-custom-loop-add/ "WeerdPress Plugins") for further details and the latest information on this plugin.
+
+
 == Changelog ==
+
+= 1.0.3 =
+* Fixed issue where Default Grid/List View setting is not applied when frontend view not enabled
 
 = 1.0.2 =
 * Added optional "order by" text for the order by dropdown on the frontend

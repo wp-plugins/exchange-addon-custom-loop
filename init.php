@@ -8,7 +8,7 @@ if (!class_exists('it_exchange_custom_loop')) {
 
         class it_exchange_custom_loop {
 
-                var $version = '1.0.2';
+                var $version = '1.0.3';
                 var $prefix = '_exchange_custom_loop_';
                 var $orderby = array(
                     'default' => 'default',
@@ -216,32 +216,36 @@ if (!class_exists('it_exchange_custom_loop')) {
                     wp_enqueue_style('it-custom-loop-styles');
 
                     // only add code for grid list if ticked in page meta data
-                    if (!empty($this->selections['show']) && (in_array( 'checkgridlist', $this->selections['show'] ) ) && (in_array(strtolower($this->selections['default_view']), $this->views) ) ):
-                                                                     
-                        wp_register_script('it_jquery_cookie', plugins_url('js/jquery.cookie.js', __FILE__), array('jquery'), $this->version, false);
-                        wp_enqueue_script('it_jquery_cookie');
-
-                        wp_register_script('it_jquery_gridlist', plugins_url('js/gridlistview.js', __FILE__), array('jquery'), $this->version, false);
-                        wp_enqueue_script('it_jquery_gridlist');
-
-                        wp_register_style('it-gridlist-styles', plugins_url('css/gridlist.css', __FILE__), null, $this->version);
-                        wp_enqueue_style('it-gridlist-styles');
-
-                        wp_register_style('it-custom-loop-icons', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', null, '4.2.0');
-                        wp_enqueue_style('it-custom-loop-icons');
+                    if  (in_array(strtolower($this->selections['default_view']), $this->views) ) :
                         
-                        // add css for grid / list
-                        add_action('wp_head', array($this, 'add_css_for_gridlist'));
+                            wp_register_script('it_jquery_cookie', plugins_url('js/jquery.cookie.js', __FILE__), array('jquery'), $this->version, false);
+                            wp_enqueue_script('it_jquery_cookie');
 
-                        // add js for for grid / list 
-                        add_action('wp_footer', array($this, 'add_js_for_gridlist'));
-                        
-                        // only add code for minimum viewport if value > 0
-                        if (!empty($this->selections['viewport']) && ( $this->selections['viewport'] > 0 ) ):
+                            wp_register_script('it_jquery_gridlist', plugins_url('js/gridlistview.js', __FILE__), array('jquery'), $this->version, false);
+                            wp_enqueue_script('it_jquery_gridlist');
 
-                            add_action('wp_footer', array($this, 'add_js_for_viewport'));
+                            wp_register_style('it-gridlist-styles', plugins_url('css/gridlist.css', __FILE__), null, $this->version);
+                            wp_enqueue_style('it-gridlist-styles');
 
-                        endif;
+                            // add css for grid / list
+                            add_action('wp_head', array($this, 'add_css_for_gridlist'));
+                            
+                            // add js for for grid / list 
+                            add_action('wp_footer', array($this, 'add_js_for_gridlist'));
+
+                            // only add code for minimum viewport if value > 0
+                            if (!empty($this->selections['viewport']) && ( $this->selections['viewport'] > 0 ) ):
+
+                                add_action('wp_footer', array($this, 'add_js_for_viewport'));
+
+                            endif;
+
+                            if (!empty($this->selections['show']) && (in_array( 'checkgridlist', $this->selections['show'] ) ) ):
+
+                                wp_register_style('it-custom-loop-icons', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', null, '4.2.0');
+                                wp_enqueue_style('it-custom-loop-icons');
+
+                            endif;
 
                     endif;
                 }

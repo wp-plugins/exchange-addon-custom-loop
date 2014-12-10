@@ -1,3 +1,5 @@
+1.0.3 - 2014-12-10 - Ronald van Weerd
+    Fixed issue where Default Grid/List View setting is not applied when frontend view not enabled
 1.0.2 - 2014-12-05 - Ronald van Weerd
     Added optional "order by" text for the order by dropdown
     Added grid/list option "none" to not affect an existing loop at all
