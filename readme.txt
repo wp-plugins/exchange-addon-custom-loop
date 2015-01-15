@@ -3,8 +3,8 @@
 Contributors: ronaldvw
 Tags: iThemes Exchange, add-on, addon, Exchange add-on, Exchange addon, store, shop, loop, grid, list
 Requires at least: 3.0.0
-Tested up to: 4.0.1
-Stable tag: 1.0.3
+Tested up to: 4.1
+Stable tag: 1.0.4
 License: GPLv2 or later
 
 Create a custom loop for your product store pages, add selections, grid/list view and more.
@@ -12,6 +12,8 @@ Create a custom loop for your product store pages, add selections, grid/list vie
 == Description ==
 
 This add-on for iThemes Exchange adds the ability to create a custom loop for the store page, including grid/list view selection, pagination, data selections and order by functionality.
+
+New in 1.0.4: add 
 
 = Add Grid / List View =
 Set a default view, either List view, or Grid view. Define how many columns you want in a grid, and how much padding between the items. Define at which viewport width a Grid view should transform in List view.
@@ -28,7 +30,13 @@ Set a default Sort order for the products
 = Frontend Options =
 Enable or disable a grid/list button for the store, so the user can dynamically change the view. Enable or disable a "order by" dropdown, so the user can change the order in which products are displayed.
 
-= 1.0.3 =
+= New fields to add content before or after the loop =
+This allows you to use a wysiwyg editor to add content before or after the custom loop. Add (for instance) introduction text for your categories or downloads, a slideshow, a video, anything you can thinks of. And at the bottom of your loop, add a newsletter subscription form, social / share and whatever else you wish to add.
+
+= New in 1.0.4 =
+Added wysiwyg fields to add content before and after the loop, as well as preserve existing page content and show the loop before or after existing content.
+
+= New in 1.0.3 =
 Fixed an issue where the Default Grid/List View setting wasn't being applied when frontend view wasn't enabled
 
 = New in 1.0.2 =
@@ -47,8 +55,10 @@ Fixed an issue where the Default Grid/List View setting wasn't being applied whe
 
 Please visit [the official website](http://weerdpress.com/wordpress-plugins/ithemes-exchange-custom-loop-add/ "WeerdPress Plugins") for further details and the latest information on this plugin.
 
-
 == Changelog ==
+
+= 1.0.4 =
+Added wysiwyg fields to add content before and after the loop, as well as preserve existing page content and show the loop before or after existing content.
 
 = 1.0.3 =
 * Fixed issue where Default Grid/List View setting is not applied when frontend view not enabled
@@ -77,3 +87,4 @@ See history.txt for a complete changelog
 1. The Front End Settings
 1. Additional option for grid/list (since 1.0.2)
 1. Optional Label text for the "order by" dropdown (since 1.0.2)
+1. Added content blocks before and after the loop (since 1.0.4)

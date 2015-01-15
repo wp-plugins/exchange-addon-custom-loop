@@ -1,3 +1,5 @@
+1.0.4 - 2015-01-15 - Ronald van Weerd
+    Added wysiwyg fields to add content before and after the loop, as well as preserve existing page content
 1.0.3 - 2014-12-10 - Ronald van Weerd
     Fixed issue where Default Grid/List View setting is not applied when frontend view not enabled
 1.0.2 - 2014-12-05 - Ronald van Weerd
