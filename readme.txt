@@ -13,8 +13,6 @@ Create a custom loop for your product store pages, add selections, grid/list vie
 
 This add-on for iThemes Exchange adds the ability to create a custom loop for the store page, including grid/list view selection, pagination, data selections and order by functionality.
 
-New in 1.0.4: add 
-
 = Add Grid / List View =
 Set a default view, either List view, or Grid view. Define how many columns you want in a grid, and how much padding between the items. Define at which viewport width a Grid view should transform in List view.
 
