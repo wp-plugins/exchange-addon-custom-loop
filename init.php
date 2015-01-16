@@ -6,7 +6,7 @@ if (!class_exists('it_exchange_custom_loop')) {
     
     class it_exchange_custom_loop {
 
-        var $version = '1.0.4';
+        var $version = '1.0.5';
         var $prefix = '_exchange_custom_loop_';
         var $orderby = array(
             'default' => 'default',
@@ -79,7 +79,22 @@ if (!class_exists('it_exchange_custom_loop')) {
         function load_metaboxes() {
 
             require_once( dirname(__FILE__) . '/lib/metabox/page-meta-box.php' );
+            
+            add_filter( 'cmb_localized_data', array($this, 'update_select_defaults') );
 
+        }
+        
+        /**
+         * Translate custom meta box library select text
+         */
+        function update_select_defaults( $l10n=array() ) {
+
+		$l10n   = array(
+                    'check_toggle'    => __( 'Select / Deselect All', 'rvw-exchange-addon-custom-loop' ),
+		);
+                
+		return $l10n;
+            
         }
 
         /**
@@ -178,12 +193,13 @@ if (!class_exists('it_exchange_custom_loop')) {
 
                 // next page text
                 if ( !$this->selections['next_page_text'] ):
-                    $this->selections['next_page_text'] = "next page &rarr;";
+                    $this->selections['next_page_text'] = __( 'next page &rarr;', 'rvw-exchange-addon-custom-loop' );
+//                    $this->selections['next_page_text'] = "next page &rarr;";
                 endif;
 
                 // previous page text
                 if ( !$this->selections['previous_page_text'] ):
-                    $this->selections['previous_page_text'] = "&larr; previous page";
+                    $this->selections['previous_page_text'] = __( '&larr; previous page', 'rvw-exchange-addon-custom-loop' );
                 endif;
 
                 // order by

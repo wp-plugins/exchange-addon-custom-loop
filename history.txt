@@ -1,13 +1,1 @@
-1.0.4 - 2015-01-15 - Ronald van Weerd
-    Added wysiwyg fields to add content before and after the loop, as well as preserve existing page content
-1.0.3 - 2014-12-10 - Ronald van Weerd
-    Fixed issue where Default Grid/List View setting is not applied when frontend view not enabled
-1.0.2 - 2014-12-05 - Ronald van Weerd
-    Added optional "order by" text for the order by dropdown
-    Added grid/list option "none" to not affect an existing loop at all
-    Grey out options that are not relevant
-1.0.1 - 2014-11-21 - Ronald van Weerd
-    Updated Readme.txt
-    Fixed issue where Grid/List would fail if no cookie set yet
-1.0.0 - 2014-11-19 - Ronald van Weerd
-    Initial release
+see readme.txt

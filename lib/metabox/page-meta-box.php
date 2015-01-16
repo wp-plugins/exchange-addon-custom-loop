@@ -29,8 +29,8 @@ function it_sample_metaboxes( array $meta_boxes ) {
             'pages'      => array( 'page' ),
             'context'    => 'normal',
             'priority'   => 'high',
-            'show_names' => true, // Show field names on the left
-            'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend
+            'show_names' => true,
+            'cmb_styles' => true,
             'fields'     => array(
                 array (
                     'name' => __( 'Enable the Custom Loop on this page', 'rvw-exchange-addon-custom-loop' ),
@@ -49,12 +49,12 @@ function it_sample_metaboxes( array $meta_boxes ) {
             'pages'      => array( 'page' ),
             'context'    => 'normal',
             'priority'   => 'high',
-            'show_names' => true, // Show field names on the left
-            'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend
+            'show_names' => true,
+            'cmb_styles' => true,
             'fields'     => array(
                 array(
-                    'name' => 'View Setttings',
-                    'desc' => 'This section allows you to specify the Grid / List settings.',
+                    'name' => __( 'View Setttings', 'rvw-exchange-addon-custom-loop' ),
+                    'desc' => __( 'This section allows you to specify the Grid / List settings.', 'rvw-exchange-addon-custom-loop' ),
                     'type' => 'title',
                     'id' => $prefix . 'view_settings_title'
                 ),
@@ -89,7 +89,7 @@ function it_sample_metaboxes( array $meta_boxes ) {
                     'default' => '600px'
                 ),                    
                 array(
-                    'name' => 'Pagination Setttings',
+                    'name' => __( 'Pagination Setttings', 'rvw-exchange-addon-custom-loop' ),
                     'desc' => '',
                     'type' => 'title',
                     'id' => $prefix . 'pagination_settings_title'
@@ -113,7 +113,7 @@ function it_sample_metaboxes( array $meta_boxes ) {
                     'type' => 'text_medium',
                 ),
                 array(
-                    'name' => 'Data Selections',
+                    'name' => __( 'Data Selections', 'rvw-exchange-addon-custom-loop' ),
                     'desc' => '',
                     'type' => 'title',
                     'id' => $prefix . 'data_selections_title'
@@ -135,7 +135,7 @@ function it_sample_metaboxes( array $meta_boxes ) {
                     'inline'  => true
                 ),
                 array(
-                    'name' => 'Order Setttings',
+                    'name' => __( 'Order Setttings', 'rvw-exchange-addon-custom-loop' ),
                     'desc' => '',
                     'type' => 'title',
                     'id' => $prefix . 'order_settings_title'
@@ -168,7 +168,7 @@ function it_sample_metaboxes( array $meta_boxes ) {
                     'type' => 'text_medium',
                 ),
                 array(
-                    'name' => 'Front End options',
+                    'name' => __('Front End options', 'rvw-exchange-addon-custom-loop' ),
                     'desc' => '',
                     'type' => 'title',
                     'id' => $prefix . 'frontend_options_title'
@@ -179,13 +179,13 @@ function it_sample_metaboxes( array $meta_boxes ) {
                     'type'    => 'multicheck',
                     'options' => array(
                         'checksortselection' => __( 'Display Sort selection', 'rvw-exchange-addon-custom-loop' ),
-//                                    'checkcategoryfilter' => __( 'Display category filter (future use)', 'rvw-exchange-addon-custom-loop' ),
+//                        'checkcategoryfilter' => __( 'Display category filter (future use)', 'rvw-exchange-addon-custom-loop' ),
                         'checkgridlist' => __( 'Display grid/list view selection', 'rvw-exchange-addon-custom-loop' )
                     )
                 ),
                 array(
                     'name' => __( 'Content Before Custom Loop', 'rvw-exchange-addon-custom-loop' ),
-                    'desc' => 'Content added here will be displayed before the Custom products. This allows you to add additional content at the top of the list of products (optional)',
+                    'desc' => __( 'Content added here will be displayed before the Custom products. This allows you to add additional content at the top of the list of products (optional)', 'rvw-exchange-addon-custom-loop' ),
                     'id' => $prefix . 'content_before',
                     'type' => 'wysiwyg',
                     'options' => array(
@@ -204,7 +204,7 @@ function it_sample_metaboxes( array $meta_boxes ) {
                 ),
                 array(
                     'name' => __( 'Content After Custom Loop', 'rvw-exchange-addon-custom-loop' ),
-                    'desc' => 'Content added here will be displayed after the Custom Loop products (optional)',
+                    'desc' => __( 'Content added here will be displayed after the Custom Loop products (optional)','rvw-exchange-addon-custom-loop' ),
                     'id' => $prefix . 'content_after',
                     'type' => 'wysiwyg',
                     'options' => array(
