@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: iThemes Exchange - Custom Loop Add-on
- * Version: 1.0.5
+ * Version: 1.0.6
  * Description: iThemes Exchange custom loop offers more control over the loop that builts a store page.
  * Plugin URI: http://weerdpress.com/wordpress-plugins/ithemes-exchange-custom-loop-add
  * Author: Ronald van Weerd
@@ -38,15 +38,3 @@ function it_exchange_register_custom_loop_addon() {
 	it_exchange_register_addon( 'custom-loop', $options );
 }
 add_action( 'it_exchange_register_addons', 'it_exchange_register_custom_loop_addon' );
-
-/**
- * Loads the translation data for WordPress
- *
- * @uses load_plugin_textdomain()
- * @since 1.0.0
- * @return void
-*/
-function it_exchange_custom_loop_set_textdomain() {
-	load_plugin_textdomain( 'rvw-exchange-addon-custom-loop', false, dirname( plugin_basename( __FILE__  ) ) . '/languages/' );
-}
-add_action( 'plugins_loaded', 'it_exchange_custom_loop_set_textdomain' );

@@ -6,17 +6,10 @@ if (!class_exists('it_exchange_custom_loop')) {
     
     class it_exchange_custom_loop {
 
-        var $version = '1.0.5';
+        var $version = '1.0.6';
+        var $plugin_name = 'exchange-addon-custom-loop';
+        var $text_domain = 'rvw-exchange-addon-custom-loop';
         var $prefix = '_exchange_custom_loop_';
-        var $orderby = array(
-            'default' => 'default',
-            'datedesc' => 'date (high to low)',
-            'dateasc' => 'date (low to high)',
-            'pricedesc' => 'price (high to low)',
-            'priceasc' => 'price (low to high)',
-            'namedesc' => 'name (high to low)',
-            'nameasc' => 'name (low to high)'
-        );
         var $selections = array(
             'enable_custom_loop' => FALSE,
             'default_view' => 'list',
@@ -41,6 +34,8 @@ if (!class_exists('it_exchange_custom_loop')) {
 
         function it_exchange_custom_loop() {
 
+            $this->load_plugin_textdomain();
+            
             if ( is_admin() ) {
                 $this->load_admin();
                 $this->get_options();
@@ -50,7 +45,19 @@ if (!class_exists('it_exchange_custom_loop')) {
             }
 
         }
+        
+        /**
+         * Load translations
+         */
+        public function load_plugin_textdomain() {
+            
+            $locale = apply_filters( 'plugin_locale', get_locale(), $this->plugin_name );
+            $dir   = trailingslashit(WP_LANG_DIR . '/plugins/' . dirname(plugin_basename( __FILE__ )));
 
+            load_textdomain( $this->text_domain, $dir . $this->text_domain . "-" . $locale . '.mo' );
+            load_plugin_textdomain( $this->text_domain, false, dirname( plugin_basename( __FILE__  ) ) . '/languages/' );
+        }
+           
         /**
          * Init and add menu page
          */
@@ -111,11 +118,12 @@ if (!class_exists('it_exchange_custom_loop')) {
                 endif;
 
                 $this->enqueue_styles_scripts();
+                
                 $this->add_code();
 
             endif;
         }
-
+        
         /**
          * register our custom queryvar
          */                
@@ -194,7 +202,6 @@ if (!class_exists('it_exchange_custom_loop')) {
                 // next page text
                 if ( !$this->selections['next_page_text'] ):
                     $this->selections['next_page_text'] = __( 'next page &rarr;', 'rvw-exchange-addon-custom-loop' );
-//                    $this->selections['next_page_text'] = "next page &rarr;";
                 endif;
 
                 // previous page text
@@ -287,6 +294,8 @@ if (!class_exists('it_exchange_custom_loop')) {
 
             ob_start();
 
+            echo "\n<div id='it-exchange-custom-loop'>";
+            
             echo "\n<div class='it-exchange-custom-loop-header entry-header'>";
 
             // only add code for order by if ticked in page meta data
@@ -425,7 +434,7 @@ if (!class_exists('it_exchange_custom_loop')) {
                         if ($exchange_custom_loop->have_posts() ) : 
                             while ( $exchange_custom_loop->have_posts() ) : $exchange_custom_loop->the_post(); 
 
-                                it_exchange_set_product( $post->ID );
+                                it_exchange_set_product( $exchange_custom_loop->post->ID );
                                 it_exchange_get_template_part( 'content-store/elements/product' ); 
 
                             endwhile;
@@ -472,6 +481,8 @@ if (!class_exists('it_exchange_custom_loop')) {
                 echo "</div>\n";
 
             endif;
+            
+            echo "\n</div>";
 
             wp_reset_postdata();
 
@@ -577,7 +588,15 @@ if (!class_exists('it_exchange_custom_loop')) {
 
             // display the sort order dropdown
             $name = "OrderBy";
-            $options = $this->orderby;
+            $options = array (
+                'default' => __('default', 'rvw-exchange-addon-custom-loop' ),
+                'datedesc' => __('date (high to low)', 'rvw-exchange-addon-custom-loop' ),
+                'dateasc' => __('date (low to high)', 'rvw-exchange-addon-custom-loop' ),
+                'pricedesc' => __('price (high to low)', 'rvw-exchange-addon-custom-loop' ),
+                'priceasc' => __('price (low to high)', 'rvw-exchange-addon-custom-loop' ),
+                'namedesc' => __('name (high to low)', 'rvw-exchange-addon-custom-loop' ),
+                'nameasc' => __('name (low to high)', 'rvw-exchange-addon-custom-loop' )
+            );
             echo "\n<div class='it-exchange-custom-loop-sort-selection'>";
                 echo "\n\t<form name='selectorderby' method='get'>";
                 if ($this->selections['order_by_text']):
