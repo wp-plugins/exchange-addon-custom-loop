@@ -12,8 +12,6 @@ Create a custom loop for your product store pages, add selections, grid/list vie
 == Description ==
 This add-on for [iThemes Exchange](https://ithemes.com/exchange/ "iThemes Exchange") adds the ability to create multiple loops for the products (store) page, including grid/list view selection, pagination, data selections and order by functionality. It allows you to create product category pages, pages per product type etc.
 
-== Features ==
-
 = Add Grid / List View =
 Set a default view, either List view, or Grid view. Define how many columns you want in a grid, and how much padding between the items. Define at which viewport width a Grid view should transform in List view.
 
@@ -31,11 +29,6 @@ Enable or disable a grid/list button for the store, so the user can dynamically 
 
 = New fields to add content before or after the loop =
 This allows you to use a wysiwyg editor to add content before or after the custom loop. Add (for instance) introduction text for your categories or downloads, a slideshow, a video, anything you can thinks of. And at the bottom of your loop, add a newsletter subscription form, social / share and whatever else you wish to add.
-
-= Translations =
-Translators, you are invited to translate the plugin, send the translated files over, and I will add your translation to the plugin, with an attribution.
-
-It is common issue with plugin translations that (custom) translations will be overwritten on plugin update. To prevent this, if you have a custom translation, or customised an existing translation, copy the relevant translation (.mo) file to wp-content/languages/plugins/exchange-addon-custom-loop/ The translation file should be named "rvw-exchange-addon-custom-loop-{locale}" where {locale} is your language locale, e.g. de_DE or nl_NL.
 
 = New in 1.0.6 =
 Fixed an issue that caused a (harmless) notification when wp_debug is enabled
@@ -66,6 +59,18 @@ Fixed an issue where the Default Grid/List View setting wasn't being applied whe
 
 Please visit [the official website](http://weerdpress.com/wordpress-plugins/ithemes-exchange-custom-loop-add/ "WeerdPress Plugins") for further details and the latest information on this plugin.
 
+== Screenshots ==
+1. Overview of all Custom Loop settings and options on the "write page" screen
+2. The Activation option on the write page screen
+3. The Grid List Settings
+4. The Pagination Settings
+5. The Data Selection Settings
+6. The Order By Settings
+7. The Front End Settings
+8. Additional option for grid/list (since 1.0.2)
+9. Optional Label text for the "order by" dropdown (since 1.0.2)
+10. Added content blocks before and after the loop (since 1.0.4)
+
 == Changelog ==
 
 = 1.0.6 - 2015/02/04 =
@@ -94,14 +99,8 @@ Please visit [the official website](http://weerdpress.com/wordpress-plugins/ithe
 = 1.0 =
 * Initial release
 
-== Screenshots ==
-1. Overview of all Custom Loop settings and options on the "write page" screen
-2. The Activation option on the write page screen
-3. The Grid List Settings
-4. The Pagination Settings
-5. The Data Selection Settings
-6. The Order By Settings
-7. The Front End Settings
-8. Additional option for grid/list (since 1.0.2)
-9. Optional Label text for the "order by" dropdown (since 1.0.2)
-10. Added content blocks before and after the loop (since 1.0.4)
+== Translations ==
+Translators, you are invited to translate the plugin, send the translated files over, and I will add your translation to the plugin, with an attribution.
+
+It is common issue with plugin translations that (custom) translations will be overwritten on plugin update. To prevent this, if you have a custom translation, or customised an existing translation, copy the relevant translation (.mo) file to wp-content/languages/plugins/exchange-addon-custom-loop/ The translation file should be named "rvw-exchange-addon-custom-loop-{locale}" where {locale} is your language locale, e.g. de_DE or nl_NL.
+

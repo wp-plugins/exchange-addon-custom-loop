@@ -1,0 +1,20 @@
+=== iThemes Exchange - Custom Loop Add-on Translations ===
+
+# WARNING! DO NOT PUT CUSTOM TRANSLATIONS HERE!
+
+A plugin update will overwrite all custom translations, and remove new translations placed in this directory.
+
+## Translating Custom Loop Add-on
+Put your custom translations in your WordPress language directory, located at: 
+
+WP_LANG_DIR . "/plugins/exchange-addon-custom-loop/{textdomain}-{locale} 
+
+where:
+
+WP_LANG_DIR     = "languages", unless specified otherwise in wp-config.php
+{textdomain}    = "rvw-exchange-addon-custom-loop"
+{locale}        = is your language locale, e.g. "de_DE" or "nl_NL"
+
+So for example, a German translation:
+
+/wp-content/languages/plugins/exchange-addon-custom-loop/rvw-exchange-addon-custom-loop-de_DE.mo
