@@ -1,0 +1,13 @@
+.it-exchange-addon-custom-loop-table {max-width: 1000px;}
+.it-exchange-addon-custom-loop-table *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.it-exchange-addon-custom-loop-table .it-column{float:left;margin:.5em 0;} 
+.it-exchange-addon-custom-loop-table .it-column > .it-column{margin:0;}
+.it-exchange-addon-custom-loop-table .ps-header span{color:#AAA;text-transform:uppercase;}
+.it-exchange-addon-custom-loop-table .it-row.ps-header{margin:1em 0 0 0;}
+.it-exchange-addon-custom-loop-table .it-row{overflow:hidden;margin:.5em 0;}
+.it-exchange-addon-custom-loop-table .it-column{}
+.it-exchange-addon-custom-loop-table .it-column.column-1{width:40%;}
+.it-exchange-addon-custom-loop-table .it-column.column-2{width:20%;}
+.it-exchange-addon-custom-loop-table .it-column.column-3{width:40%;}
+.it-exchange-addon-custom-loop-table .it-column select {max-width: 100%;}
+.it-exchange-addon-custom-loop-table .it-column input[type="text"] {background:#fff;border:1px solid #d6d6d6;border-radius:3px;padding:10px;color:#3d4142;width: 90%;max-width:260px;}
