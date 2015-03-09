@@ -6,9 +6,8 @@ if (!class_exists('it_exchange_custom_loop')) {
     
     class it_exchange_custom_loop {
 
-        var $version = '1.0.6';
+        var $version = '1.0.7';
         var $plugin_name = 'exchange-addon-custom-loop';
-        var $text_domain = 'rvw-exchange-addon-custom-loop';
         var $prefix = '_exchange_custom_loop_';
         var $selections = array(
             'enable_custom_loop' => FALSE,
@@ -54,8 +53,8 @@ if (!class_exists('it_exchange_custom_loop')) {
             $locale = apply_filters( 'plugin_locale', get_locale(), $this->plugin_name );
             $dir   = trailingslashit(WP_LANG_DIR . '/plugins/' . dirname(plugin_basename( __FILE__ )));
 
-            load_textdomain( $this->text_domain, $dir . $this->text_domain . "-" . $locale . '.mo' );
-            load_plugin_textdomain( $this->text_domain, false, dirname( plugin_basename( __FILE__  ) ) . '/languages/' );
+            load_textdomain( 'rvw-exchange-addon-custom-loop', $dir . 'rvw-exchange-addon-custom-loop-' . $locale . '.mo' );
+            load_plugin_textdomain( 'rvw-exchange-addon-custom-loop', false, dirname( plugin_basename( __FILE__  ) ) . '/languages/' );
         }
            
         /**

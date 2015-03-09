@@ -6,7 +6,6 @@
  * Plugin URI: http://weerdpress.com/wordpress-plugins/ithemes-exchange-custom-loop-add
  * Author: Ronald van Weerd
  * Author URI: http://vanweerd.com
- * iThemes Package: exchange-addon-custom-loop
  
  * Installation:
  * 1. Download and unzip the latest release zip file.

@@ -4,7 +4,7 @@ Contributors: ronaldvw
 Tags: iThemes Exchange, add-on, addon, Exchange add-on, Exchange addon, store, shop, loop, grid, list
 Requires at least: 3.0.0
 Tested up to: 4.1
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv2 or later
 
 Create a custom loop for your product store pages, add selections, grid/list view and more.
@@ -29,6 +29,9 @@ Enable or disable a grid/list button for the store, so the user can dynamically 
 
 = New fields to add content before or after the loop =
 This allows you to use a wysiwyg editor to add content before or after the custom loop. Add (for instance) introduction text for your categories or downloads, a slideshow, a video, anything you can thinks of. And at the bottom of your loop, add a newsletter subscription form, social / share and whatever else you wish to add.
+
+= New in 1.0.7 =
+minor bug fixes
 
 = New in 1.0.6 =
 Fixed an issue that caused a (harmless) notification when wp_debug is enabled
@@ -73,9 +76,13 @@ Please visit [the official website](http://weerdpress.com/wordpress-plugins/ithe
 
 == Changelog ==
 
+= 1.0.7 - 2015/03/09 =
+* Use literal for textdomain
+* Removed code that would register the add-on with the iThemes updater
+
 = 1.0.6 - 2015/02/04 =
 * Fixed an issue that caused a (harmless) notification when wp_debug is enabled
-* More localisation enhancements, added the ability to store translations in the wp-content/languages/plugins/ folder
+* More localisation enhancements, added the ability to store translations in the wp-content/languages/plugins/exchange-addon-custom-loop/ folder
 * Added Serbian translation, provided by Ogi Djuraskovic from [firstsiteguide.com](http://firstsiteguide.com/ "firstsiteguide.com")
 
 = 1.0.5 =
