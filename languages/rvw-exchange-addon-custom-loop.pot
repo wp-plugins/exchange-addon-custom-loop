@@ -1,0 +1,445 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: iThemes Exchange - Custom Loop Add-on v1.0.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-02-06 10:36:59+0000\n"
+"Last-Translator: admin <ronald@vanweerd.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: exchange-addon-custom-loop.php:28
+#@ rvw-exchange-addon-custom-loop
+msgid "Custom Loop"
+msgstr ""
+
+#: exchange-addon-custom-loop.php:29
+#@ rvw-exchange-addon-custom-loop
+msgid "iThemes Exchange custom loop offers more control over the loop that builts a store page."
+msgstr ""
+
+#: init.php:99
+#: lib/metabox/init.php:288
+#@ rvw-exchange-addon-custom-loop
+#@ cmb
+msgid "Select / Deselect All"
+msgstr ""
+
+#: init.php:204
+#@ rvw-exchange-addon-custom-loop
+msgid "next page &rarr;"
+msgstr ""
+
+#: init.php:209
+#@ rvw-exchange-addon-custom-loop
+msgid "&larr; previous page"
+msgstr ""
+
+#: init.php:593
+#@ rvw-exchange-addon-custom-loop
+msgid "default"
+msgstr ""
+
+#: init.php:594
+#@ rvw-exchange-addon-custom-loop
+msgid "date (high to low)"
+msgstr "datum hoog laag"
+
+#: init.php:595
+#@ rvw-exchange-addon-custom-loop
+msgid "date (low to high)"
+msgstr "datum laag hoog"
+
+#: init.php:596
+#@ rvw-exchange-addon-custom-loop
+msgid "price (high to low)"
+msgstr ""
+
+#: init.php:597
+#@ rvw-exchange-addon-custom-loop
+msgid "price (low to high)"
+msgstr ""
+
+#: init.php:598
+#@ rvw-exchange-addon-custom-loop
+msgid "name (high to low)"
+msgstr ""
+
+#: init.php:599
+#@ rvw-exchange-addon-custom-loop
+msgid "name (low to high)"
+msgstr ""
+
+#: lib/metabox/helpers/cmb_Meta_Box_ajax.php:47
+#@ cmb
+msgid "Please Try Again"
+msgstr ""
+
+#: lib/metabox/helpers/cmb_Meta_Box_ajax.php:131
+#@ cmb
+msgid "Remove Embed"
+msgstr ""
+
+#: lib/metabox/helpers/cmb_Meta_Box_ajax.php:134
+#, php-format
+#@ cmb
+msgid "No oEmbed Results Found for %s. View more info at"
+msgstr ""
+
+#: lib/metabox/helpers/cmb_Meta_Box_field.php:459
+#@ cmb
+msgid "Add Group"
+msgstr ""
+
+#: lib/metabox/helpers/cmb_Meta_Box_field.php:460
+#@ cmb
+msgid "Remove Group"
+msgstr ""
+
+#: lib/metabox/helpers/cmb_Meta_Box_types.php:250
+#@ cmb
+msgid "Add Row"
+msgstr ""
+
+#: lib/metabox/helpers/cmb_Meta_Box_types.php:306
+#: lib/metabox/helpers/cmb_Meta_Box_types.php:706
+#: lib/metabox/helpers/cmb_Meta_Box_types.php:768
+#@ cmb
+msgid "Remove"
+msgstr ""
+
+#: lib/metabox/helpers/cmb_Meta_Box_types.php:601
+#: lib/metabox/helpers/cmb_Meta_Box_types.php:635
+#@ cmb
+msgid "No terms"
+msgstr ""
+
+#: lib/metabox/helpers/cmb_Meta_Box_types.php:674
+#: lib/metabox/helpers/cmb_Meta_Box_types.php:728
+#@ cmb
+msgid "Add or Upload File"
+msgstr ""
+
+#: lib/metabox/helpers/cmb_Meta_Box_types.php:695
+#: lib/metabox/helpers/cmb_Meta_Box_types.php:760
+#@ cmb
+msgid "Remove Image"
+msgstr ""
+
+#: lib/metabox/helpers/cmb_Meta_Box_types.php:706
+#: lib/metabox/helpers/cmb_Meta_Box_types.php:768
+#@ cmb
+msgid "File:"
+msgstr ""
+
+#: lib/metabox/helpers/cmb_Meta_Box_types.php:706
+#: lib/metabox/helpers/cmb_Meta_Box_types.php:768
+#@ cmb
+msgid "Download"
+msgstr ""
+
+#: lib/metabox/init.php:258
+#@ default
+msgid "Clear"
+msgstr ""
+
+#: lib/metabox/init.php:259
+#@ default
+msgid "Default"
+msgstr ""
+
+#: lib/metabox/init.php:260
+#@ default
+msgid "Select Color"
+msgstr ""
+
+#: lib/metabox/init.php:261
+#@ default
+msgid "Current Color"
+msgstr ""
+
+#: lib/metabox/init.php:1177
+#@ default
+msgid "Save"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:28
+#@ rvw-exchange-addon-custom-loop
+msgid "iThemes Exchange Custom Loop"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:36
+#@ rvw-exchange-addon-custom-loop
+msgid "Enable the Custom Loop on this page"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:37
+#@ rvw-exchange-addon-custom-loop
+msgid "Tick this box so that more options become available to setup your custom loop page"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:48
+#@ rvw-exchange-addon-custom-loop
+msgid "iThemes Exchange Custom Loop Options"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:56
+#@ rvw-exchange-addon-custom-loop
+msgid "View Setttings"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:57
+#@ rvw-exchange-addon-custom-loop
+msgid "This section allows you to specify the Grid / List settings."
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:62
+#@ rvw-exchange-addon-custom-loop
+msgid "Default view"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:63
+#@ rvw-exchange-addon-custom-loop
+msgid "the default store view"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:67
+#@ rvw-exchange-addon-custom-loop
+msgid "List style"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:68
+#@ rvw-exchange-addon-custom-loop
+msgid "Grid style"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:69
+#@ rvw-exchange-addon-custom-loop
+msgid "Don't change"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:73
+#@ rvw-exchange-addon-custom-loop
+msgid "Number of columns in Grid view"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:74
+#@ rvw-exchange-addon-custom-loop
+msgid "Defaults to 3 if left blank"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:79
+#@ rvw-exchange-addon-custom-loop
+msgid "Padding between the products as a percentage"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:80
+#@ rvw-exchange-addon-custom-loop
+msgid "Defaults to 5 if left blank"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:85
+#@ rvw-exchange-addon-custom-loop
+msgid "Viewport to default to List view"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:86
+#@ rvw-exchange-addon-custom-loop
+msgid "Although Grid view can work well on large screens, at smaller sizes, List view is recommended. Enter the minimum Viewport Width at which point the store Grid view will be changed to List view. If left blank, this will default to 600px. A value of 0 will disable this functionality."
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:92
+#@ rvw-exchange-addon-custom-loop
+msgid "Pagination Setttings"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:98
+#@ rvw-exchange-addon-custom-loop
+msgid "Products per page"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:99
+#@ rvw-exchange-addon-custom-loop
+msgid "if left blank, will default to the value in the WordPress settings"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:104
+#@ rvw-exchange-addon-custom-loop
+msgid "Next page text"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:105
+#@ rvw-exchange-addon-custom-loop
+msgid "Defaults to \"next page &rarr;\" if left blank"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:110
+#@ rvw-exchange-addon-custom-loop
+msgid "Previous page text"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:111
+#@ rvw-exchange-addon-custom-loop
+msgid "Defaults to \"&larr; previous page\" if left blank"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:116
+#@ rvw-exchange-addon-custom-loop
+msgid "Data Selections"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:122
+#@ rvw-exchange-addon-custom-loop
+msgid "Select the category/categories"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:123
+#@ rvw-exchange-addon-custom-loop
+msgid "if left blank, all categories will be included"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:130
+#@ rvw-exchange-addon-custom-loop
+msgid "Select the product type(s)"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:131
+#@ rvw-exchange-addon-custom-loop
+msgid "if left blank, all product types will be included"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:138
+#@ rvw-exchange-addon-custom-loop
+msgid "Order Setttings"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:144
+#@ rvw-exchange-addon-custom-loop
+msgid "Order the products by"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:148
+#@ rvw-exchange-addon-custom-loop
+msgid "Store default"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:149
+#@ rvw-exchange-addon-custom-loop
+msgid "Price"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:150
+#@ rvw-exchange-addon-custom-loop
+msgid "Title"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:151
+#@ rvw-exchange-addon-custom-loop
+msgid "Date"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:155
+#@ rvw-exchange-addon-custom-loop
+msgid "Order"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:156
+#@ rvw-exchange-addon-custom-loop
+msgid "Select how the products should be arranged (has no effect if Order by is \"Store default\")"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:160
+#@ rvw-exchange-addon-custom-loop
+msgid "Ascending (low to high)"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:161
+#@ rvw-exchange-addon-custom-loop
+msgid "Descending (high to low)"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:165
+#@ rvw-exchange-addon-custom-loop
+msgid "Order By text"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:166
+#@ rvw-exchange-addon-custom-loop
+msgid "Optional, blank allowed"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:171
+#@ rvw-exchange-addon-custom-loop
+msgid "Front End options"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:177
+#@ rvw-exchange-addon-custom-loop
+msgid "Show in heading"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:181
+#@ rvw-exchange-addon-custom-loop
+msgid "Display Sort selection"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:183
+#@ rvw-exchange-addon-custom-loop
+msgid "Display grid/list view selection"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:187
+#@ rvw-exchange-addon-custom-loop
+msgid "Content Before Custom Loop"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:188
+#@ rvw-exchange-addon-custom-loop
+msgid "Content added here will be displayed before the Custom products. This allows you to add additional content at the top of the list of products (optional)"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:206
+#@ rvw-exchange-addon-custom-loop
+msgid "Content After Custom Loop"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:207
+#@ rvw-exchange-addon-custom-loop
+msgid "Content added here will be displayed after the Custom Loop products (optional)"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:225
+#@ rvw-exchange-addon-custom-loop
+msgid "Show before or after content"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:226
+#@ rvw-exchange-addon-custom-loop
+msgid "Show the Custom Loop before or after any existing page content"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:230
+#@ rvw-exchange-addon-custom-loop
+msgid "Show the Custom Loop before existing page content"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:231
+#@ rvw-exchange-addon-custom-loop
+msgid "Show the Custom Loop after existing page content"
+msgstr ""
+
+#: lib/metabox/page-meta-box.php:232
+#@ rvw-exchange-addon-custom-loop
+msgid "Ignore existing content, just show the Custom Loop"
+msgstr ""
+
