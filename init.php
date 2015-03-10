@@ -6,7 +6,7 @@ if (!class_exists('it_exchange_custom_loop')) {
     
     class it_exchange_custom_loop {
 
-        var $version = '1.0.7';
+        var $version = '1.0.8';
         var $plugin_name = 'exchange-addon-custom-loop';
         var $prefix = '_exchange_custom_loop_';
         var $selections = array(
