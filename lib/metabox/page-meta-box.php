@@ -191,7 +191,7 @@ function it_sample_metaboxes( array $meta_boxes ) {
                     'options' => array(
                         'wpautop' => true,
                         'media_buttons' => true,
-                        'textarea_name' => $editor_id,
+                        'textarea_name' => 'content_before_loop',
                         'textarea_rows' => get_option('default_post_edit_rows', 10),
                         'tabindex' => '',
                         'editor_css' => '',
@@ -210,7 +210,7 @@ function it_sample_metaboxes( array $meta_boxes ) {
                     'options' => array(
                         'wpautop' => true,
                         'media_buttons' => true,
-                        'textarea_name' => $editor_id,
+                        'textarea_name' => 'content_after_loop',
                         'textarea_rows' => get_option('default_post_edit_rows', 10),
                         'tabindex' => '',
                         'editor_css' => '',

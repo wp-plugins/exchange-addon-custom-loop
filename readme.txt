@@ -4,13 +4,15 @@ Contributors: ronaldvw
 Tags: iThemes Exchange, add-on, addon, Exchange add-on, Exchange addon, store, shop, loop, grid, list
 Requires at least: 3.0.0
 Tested up to: 4.1
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 License: GPLv2 or later
 
 Create a custom loop for your product store pages, add selections, grid/list view and more.
 
 == Description ==
 This add-on for [iThemes Exchange](https://ithemes.com/exchange/ "iThemes Exchange") adds the ability to create multiple loops for the products (store) page, including grid/list view selection, pagination, data selections and order by functionality. It allows you to create product category pages, pages per product type etc.
+
+To create a new store page, in the wp-dashboard go to pages, "add new" (or edit an existing page) and tick the box to enable the custom loop. Do not use the Exchange store shortcode on that page.
 
 = Add Grid / List View =
 Set a default view, either List view, or Grid view. Define how many columns you want in a grid, and how much padding between the items. Define at which viewport width a Grid view should transform in List view.
@@ -61,13 +63,13 @@ Fixed an issue where the Default Grid/List View setting wasn't being applied whe
 3. Open the 'Addons' screen through the 'Exchange' menu in WordPress
 4. If Custom Loop is not enabled, click Enable beside the 'Custom Loop' entry in the Addons listing
 
-5. Once enabled, the "write page" screen will have an extra option to enable the custom loop. Upon ticking that option, all custom loop options will become visible and editable. For an overview of all options, see the screenshots section.
+5. Once enabled, the standard WordPress "Add Page" (or when editing an existing page) will have an extra option to enable the custom loop. Upon ticking that option, all custom loop options will become visible and editable. For an overview of all options, see the screenshots section.
 
 Please visit [the official website](http://weerdpress.com/wordpress-plugins/ithemes-exchange-custom-loop-add/ "WeerdPress Plugins") for further details and the latest information on this plugin.
 
 == Screenshots ==
-1. Overview of all Custom Loop settings and options on the "write page" screen
-2. The Activation option on the write page screen
+1. Overview of all Custom Loop settings and options on the "Add Page" screen
+2. The Activation option on the Add (or Edit) Page screen
 3. The Grid List Settings
 4. The Pagination Settings
 5. The Data Selection Settings
@@ -78,6 +80,8 @@ Please visit [the official website](http://weerdpress.com/wordpress-plugins/ithe
 10. Added content blocks before and after the loop (since 1.0.4)
 
 == Changelog ==
+= 1.0.9 - 2015/04/20 =
+* Minor update to fix code that resulted in PHP notices when wp_debug is set to true
 
 = 1.0.8 - 2015/03/10 =
 * Fixed version tag
